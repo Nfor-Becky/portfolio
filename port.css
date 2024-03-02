@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    position: sticky;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 1.5rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #fcfcfc;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+a:hover{
+    color:rgb(226, 128, 43);
+}
+.menu-div {
+  display: inline-block;
+  cursor: pointer;
+}
+
+ .bar{
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  }
+  .hero img {
+    height: 37.5rem;
+    width: 37.5rem;
+  }
+  
+  .bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  }
+  
+  .bio h2 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+
+  .more-about {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+  }
+  
+  .more-about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  
+  .more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+  }
+
+
+.skills{
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin: 2.5rem;
+}
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+.skills-wrapper{
+  flex-wrap: wrap;
+}
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.projects{
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+.project-pic{
+  width: 75%;
+  height: 60%;
+  align-items: center;
+  margin:0 30px 0 32.5px;
+}
+.projects-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.project-detail{
+  text-align: center;
+  padding: 0.4rem;
+}
+.projects-card{
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+.contact-form-container{
+  margin: 0 20% 0 20%;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px; 
+}
+.contact-form{
+  padding: 15px;
+}
+.contact-form-container label{
+  line-height: 2.7em;
+  font-weight: 400;
+  color: black;
+}
+.contact-form-container textarea{
+  min-height: 6.5rem;
+  font-size: 14px;
+}
+.contact-form-container .input-field{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset;
+  font-size: 0.875rem;
+  outline: none;
+}
+h2{
+  text-align: center;
+  font-size: 400;
+}
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: rgb(226, 128, 43);
+}
+.submit-btn{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: 400;
+  transition: 0.2s;
+}
+.submit-btn:hover {
+  background-color: rgb(226, 128, 43);
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer{
+  background-color: rgb(141, 135, 135);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+@media screen and (max-width: 720px){
+  .menu {
+    display: block;
+    cursor: pointer;
+    
+  }
+  .menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  nav ul{
+    position: fixed;
+    background-color: rgb(141, 135, 135);
+    display: flex;
+    flex-direction: column;
+    top: 86px;
+    left: -100%;
+    width: 80%;
+    text-align: center;
+    /* transform: translateX(120%);*/
+    transition: transform 0.5s ease-in;
+  }
+  
+   nav ul li {
+    margin: 8px;
+  }
+  nav ul.show {
+    transform: translateX();
+  }
+  nav ul.active{
+    left: 0;
+  }
+
+  .hero{
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 7rem;
+  }
+  .hero img{
+    height: 37.5rem;
+    width: 28rem;
+  }
+  .bio{
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
+
+  .more-about{
+    margin-top: 2rem;
+    padding:  1rem 3.5rem;
+  }
+  .more-about h2{
+    text-align: center;
+  }
+  .more-about p{
+    text-align: justify;
+  }
+  
+  .icon{
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+
+  .projects-container{
+    flex-direction: column;
+  }
+  .projects-card{
+    width: 20.875rem;
+  }
+}
+
+
+
+
+
+
+
+
+  /* https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/ */

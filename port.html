@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      
+<script src="port.js"></script>    
+    </head>
+<body>
+     <!-- Navbar -->
+
+   <nav>
+    <h1>Nfor Ringnyu Becky</h1>
+    <ul class="navigation">
+        <li><a href="#about" class="nav-links">About</a> </li>
+        <li><a href="#skills" class="nav-links">Skills</a> </li>
+        <li><a href="#projects" class="nav-links">Projects</a> </li>
+        <li><a href="#contact" class="nav-links">Contacts</a> </li>
+    </ul>
+
+      <div class="menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+   </nav>  
+   
+    <!-- Hero Section -->
+
+    <section class="hero" id="about">
+        <img
+          src="becky.jpeg"
+          alt="Nfor Becky"
+          class="hero-img"
+        />
+        <div class="bio ">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+            inventore tempore minus nemo, iste ullam illo laboriosam maiores
+            repudiandae quos!
+          </p>
+        </div>
+  </section>
+
+    <!-- More about -->
+
+   <section class="more-about">
+    <h2>More About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+        autem deleniti cupiditate molestias quis unde quae totam porro dicta
+        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+        nostrum dolor minus, libero delectus praesentium perferendis
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+        consequuntur labore? Ea totam voluptas amet!
+      </p>
+
+   </section>
+
+       <!-- Skills section -->
+
+       <section class="skills" id="skills">
+        <h2 class="skill-header">My Top skills</h2>
+
+        <div class="skills-wrapper">
+          <div class="first-set-animate">
+            <img
+            src="html.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+          src="css.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="download.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+       </div>
+       <div class="second-set-animate">
+       <img
+       src="django.png"
+       alt=""
+       loading="lazy"
+       class="icon icon-card"
+     />
+     <img
+       src="word.png"
+       alt=""
+       loading="lazy"
+       class="icon icon-card"
+     />
+     <img
+       src="git.png"
+       alt=""
+       loading="lazy"
+       class="icon icon-card"
+     />
+   </div>
+
+        </div>
+       </section>
+
+
+    <!-- Projects section -->
+
+
+<section class="projects" id="projects">
+    <h2 class="projects-title">Some of my recent projects</h2>
+    <div class="projects-container">
+      <div class="projects-card">
+        <img 
+        src="guest.jpeg"
+        alt="Guest-House Website"
+        loading="smart"
+        class="project-pic"/>
+        <h3 class="projects-title">Guest-House Website</h3>
+        <p class="project-detail">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+        </p>
+        <a href="#" target="_blank_" class="project-link">Check it out</a>
+      </div>
+      <div class="projects-card">
+        <img 
+        src="clock.jpeg"
+        alt="clock Website"
+        loading="smart"
+        class="project-pic"/>
+        <h3 class="projects-title">clock</h3>
+        <p class="project-detail">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+        </p>
+        <a href="#" target="_blank_" class="project-link">Check it out</a>
+      </div>    
+        <div class="projects-card">
+        <img 
+        src="school.jpeg"
+        alt="school Website"
+        loading="smart"
+        class="project-pic"/>
+        <h3 class="projects-title">School Website</h3>
+        <p class="project-detail">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+        </p>
+        <a href="#" target="_blank_" class="project-link">Check it out</a>
+      </div>
+    </div>
+</section>
+    
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter Your Name"
+              class="input-field"
+              required/>
+            </div>
+            <div>
+            <label for="name">Email</label>
+            <input
+            type="email"
+            id="email"
+            name="sender-email"
+            placeholder="Enter Your Email"
+            class="input-field"
+            required/>
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+            id="message"
+            cols="60"
+            rows="10"
+            placeholder="Enter Your Message"
+            name="message"
+            class="input-field"
+            required>
+          </textarea>
+          </div>
+          <input 
+          type="submit"
+          value="submit"
+          id="submit-btn"
+          class="submit-btn"/>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Social accounts - Fixed to the right -->
+
+    <div class="socials">
+      <a href="#" target="_blank">
+        <img 
+        src="linkedin.png"
+        alt="linkedin"
+        loading="eager"
+        class="socicon"/>
+      </a>
+      <a>
+        <img 
+        src="whatsap.png"
+        alt="linkedin"
+        loading="eager"
+        class="socicon"/>
+      </a>
+      <a>
+        <img 
+        src="gitup.png"
+        alt="linkedin"
+        loading="eager"
+        class="socicon"/>
+      </a>
+      <a>
+        <img 
+        src="twit.png"
+        alt="linkedin"
+        loading="eager"
+        class="socicon"/>
+      </a>
+    </div>
+  
+    <!-- Footer section -->
+<footer>
+  <p>Nfor Becky</p>
+  </footer>
+</body>
+</html>
