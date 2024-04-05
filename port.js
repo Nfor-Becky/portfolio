@@ -1,21 +1,18 @@
-const menu = document.querySelector("#menu");
-const ul = document.querySelector("navigation");
-const navLink = document.querySelectorAll(".nav-links");
-
-menu.addEventListener("click", function(){
-    if(navigation.classList.contains("show-links")){
-        links.classList.remove("show-links");
-    }else{
-        links.classList.add("show-links");
-    }
+const hamMenu = document.querySelector(".ham-menu");
+const menu = document.querySelector("nav");
+hamMenu.addEventListener("click", () => {
+    hamMenu.classList.toggle("active");
+    menu.classList.toggle("active");
 });
-// function mobileMenu(){
-//     menu.classList.toggle("active");
-//     ul.classList.toggle("active");
-// }
 
-// navLinks.forEach(n => n.addEventListener("click", closeMenu));
-// function closeMenu(){
-//     menu.classList.remove("active");
-//     ul.classList.remove("active");
-// }
+
+
+
+
+
+
+
+
+
+
+

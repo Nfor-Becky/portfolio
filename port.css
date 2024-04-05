@@ -1,102 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-nav{
-    position: sticky;
-    display: flex;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding: 1.5rem 1rem;
-    align-items: center;
-    justify-content: space-between;
-    background-color:  #fcfcfc;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 10px;
+/* navigation */
+.nav {
+  position: sticky;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 1rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fcfcfc;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-a{
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-}
-a:hover{
-    color:rgb(226, 128, 43);
-}
-.menu-div {
+
+ul li {
+  list-style: none;
   display: inline-block;
+  padding: 10px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: rgb(226, 128, 43);
+}
+
+.ham-menu {
+  height: 50px;
+  width: 40px;
+  margin-left: auto;
+  position: relative;
   cursor: pointer;
+  display: none;
 }
 
- .bar{
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
+
+/* about */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
 }
 
-.menu {
-    display: none;
-  }
 
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: auto;
-  }
-  .hero img {
-    height: 37.5rem;
-    width: 37.5rem;
-  }
-  
-  .bio {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-  }
-  
-  .bio h2 {
-    margin-bottom: var(--bottom-margin);
-  }
-  
-  .bio p {
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
-  }
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
+}
 
-  .more-about {
-    background-color: var(--bg-color);
-    padding: 1rem 6rem;
-  }
-  
-  .more-about h2 {
-    margin-bottom: var(--bottom-margin);
-    text-align: center;
-  }
-  
-  .more-about p {
-    line-height: var(--line-height);
-    padding: 0.4rem;
-  }
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+}
 
+.bio h2 {
+  margin-bottom: 3px;
+}
 
-.skills{
+.bio p {
+  line-height: 20px;
+  padding: 0.3rem 0;
+}
+
+/* skills */
+.skills {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
   margin: 2.5rem;
 }
+
 .skill-header {
   margin-bottom: 1rem;
 }
@@ -109,41 +95,49 @@ a:hover{
   width: 11.875rem;
   height: 11.25rem;
 }
-.skills-wrapper{
+
+.skills-wrapper {
   flex-wrap: wrap;
 }
+
 .icon-card {
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 10px rgb(67, 66, 66);
   padding: 20px;
   margin: 10px;
 }
 
-.projects{
-  padding: 32px 0;
+/* projects */
+.projects {
+  padding: 50px;
   margin-top: 2rem;
 }
-.project-pic{
+
+.project-pic {
   width: 75%;
   height: 60%;
   align-items: center;
-  margin:0 30px 0 32.5px;
+  margin: 0 30px 0 32.5px;
 }
-.projects-container{
+
+.projects-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
 }
-.project-detail{
+
+.project-detail {
   text-align: center;
   padding: 0.4rem;
 }
-.projects-card{
+
+.projects-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px;
@@ -151,26 +145,31 @@ a:hover{
   margin: 10px;
 }
 
+/* contact */
 
-.contact-form-container{
+.contact-form-container {
   margin: 0 20% 0 20%;
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px; 
+  box-shadow: 0 3px 10px;
 }
-.contact-form{
+
+.contact-form {
   padding: 15px;
 }
-.contact-form-container label{
+
+.contact-form-container label {
   line-height: 2.7em;
   font-weight: 400;
   color: black;
 }
-.contact-form-container textarea{
+
+.contact-form-container textarea {
   min-height: 6.5rem;
   font-size: 14px;
 }
-.contact-form-container .input-field{
+
+.contact-form-container .input-field {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
@@ -179,15 +178,18 @@ a:hover{
   font-size: 0.875rem;
   outline: none;
 }
-h2{
+
+h2 {
   text-align: center;
   font-size: 400;
 }
+
 .input-field::placeholder {
   padding: 0.5rem;
   color: rgb(226, 128, 43);
 }
-.submit-btn{
+
+.submit-btn {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -197,12 +199,14 @@ h2{
   font-weight: 400;
   transition: 0.2s;
 }
+
 .submit-btn:hover {
   background-color: rgb(226, 128, 43);
   border: 2px solid black;
   cursor: pointer;
 }
 
+/* links */
 
 .socials {
   display: flex;
@@ -217,85 +221,112 @@ h2{
   height: 2rem;
 }
 
-footer{
+/* footer */
+
+footer {
   background-color: rgb(141, 135, 135);
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
 }
-@media screen and (max-width: 720px){
-  .menu {
-    display: block;
-    cursor: pointer;
-    
-  }
-  .menu.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .menu.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .menu.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  nav ul{
+
+@media screen and (max-width: 720px) {
+  nav {
+    height: 100vh;
+    width: 100%;
+    max-width: 200px;
     position: fixed;
-    background-color: rgb(141, 135, 135);
+    top: 0;
+    right: -200px;
     display: flex;
     flex-direction: column;
-    top: 86px;
-    left: -100%;
-    width: 80%;
+    align-items: column;
+    justify-content: center;
     text-align: center;
-    /* transform: translateX(120%);*/
-    transition: transform 0.5s ease-in;
-  }
-  
-   nav ul li {
-    margin: 8px;
-  }
-  nav ul.show {
-    transform: translateX();
-  }
-  nav ul.active{
-    left: 0;
+    transition: .3s ease;
   }
 
-  .hero{
-    margin-top: -4rem;
-    flex-direction: column;
-    gap: 7rem;
-  }
-  .hero img{
-    height: 37.5rem;
-    width: 28rem;
-  }
-  .bio{
-    margin-top: -7rem;
-    width: 20.5rem;
+  nav.active {
+    right: 0;
   }
 
-  .more-about{
-    margin-top: 2rem;
-    padding:  1rem 3.5rem;
-  }
-  .more-about h2{
+  ul li {
+    display: block;
+    margin: 1rem;
     text-align: center;
   }
-  .more-about p{
-    text-align: justify;
-  }
-  
-  .icon{
-    width: 5.875rem;
-    height: 5.25rem;
+
+  .ham-menu {
+    display: inline-block;
   }
 
-  .projects-container{
+  .ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    border-radius: 25px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+  }
+
+  .ham-menu span:nth-child(1) {
+    top: 25%;
+  }
+
+  .ham-menu span:nth-child(3) {
+    top: 75%;
+  }
+
+  .ham-menu.active span {
+    background-color: white;
+  }
+
+  .ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .ham-menu span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .nav h1 {
+    font-size: 20px;
+  }
+
+  .hero {
+    display: flex;
     flex-direction: column;
   }
-  .projects-card{
-    width: 20.875rem;
+
+
+  .hero img {
+    height: 20.5rem;
+    width: 15.5rem;
+  }
+
+  .bio {
+    width: 15rem;
+    padding: 0.625rem;
+  }
+
+  .project-pic {
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -306,4 +337,4 @@ footer{
 
 
 
-  /* https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/ */
+/* https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/ */
